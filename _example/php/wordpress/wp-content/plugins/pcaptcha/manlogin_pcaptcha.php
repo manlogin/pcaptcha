@@ -1,13 +1,12 @@
 <?php
 /*
 Plugin Name: ManLogin.com PCaptcha
-Plugin URI: https://wordpress.org/plugins/PCaptcha/
+Plugin URI: http://wordpress.org/plugins/PCaptcha/
 Description: Add a PCaptcha to the login and registration 
 Author: Manlogin.com
 Version: 1.0.0
-Author URI: https://ManLogin.com
-Text Domain: PCaptcha
-Domain Path: /languages/
+Author URI: https://manlogin.com
+Text Domain: manlogin-com-pcaptcha
 */
 
 if ( !function_exists( 'add_action' ) ) {
@@ -188,14 +187,14 @@ class LoginPCaptcha {
                     "verify_peer_name"=>false,
                 ),
             );
-            $result = file_get_contents("https://manlogin.com/captcha/cheack/v1/$uid/$secret/$pcaptcha", false, stream_context_create($arrContextOptions));
-            $g_response = json_decode($result);
-            if (is_object($g_response)) {
-                if ( $g_response->Code == 200 && $g_response->success ) {
+            $result = wp_remote_get("https://manlogin.com/captcha/cheack/v1/$uid/$secret/$pcaptcha");
+            $g_response = json_decode( wp_remote_retrieve_body($result), true );
+            if (is_array($g_response)) {
+                if ( $g_response["Code"] == 200 && $g_response["success"] ) {
                     update_option('login_pcaptcha_working', true);
                     return $user_or_email; // success, let them in
                 } else {
-                    return new WP_Error('authentication_failed',$g_response->Message);
+                    return new WP_Error('authentication_failed',$g_response["Message"]);
                 }
             } else {
                 delete_option('login_pcaptcha_working');

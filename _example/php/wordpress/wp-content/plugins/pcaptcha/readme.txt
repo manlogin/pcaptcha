@@ -3,9 +3,6 @@ Contributors: javadnasrollahi68, H4midR,mhdshakouri
 Tags: ManLogin,PCaptcha,recaptcha,security,login,bots
 Requires at least: 4.6
 Tested up to: 5.3
-Stable tag: 1.6.7
-License: GPLv2 or later
-License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 Adds a ManLogin.com PCaptcha to your Wordpress and Woocommerce login and user registration pages.
 
@@ -43,7 +40,7 @@ Yes, please. Submit pull requests on <a href="https://github.com/manlogin/pcaptc
 
 = Where can I learn more about ManLogin reCAPTCHA? =
 
-<a href="https://manlogin.com/">https://ManLogin.com/</a>
+<a href="http://manlogin.com/">http://ManLogin.com/</a>
 
 == Screenshots ==
 
