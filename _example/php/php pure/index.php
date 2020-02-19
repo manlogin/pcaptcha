@@ -5,7 +5,7 @@
 		$pcaptcha 	= $_POST["pcaptcha"]; // مقداری است که از طریق فرم ارسال شده است
 		$uid 		= "0x4e2e"; // کد یکتای کپچای شما در سایت من لاکین
 		$secretKey 	= "e8414ae66a37806bae1166a6297ce302a393e70b8e444b37abe20fe4e277779c"; // کلید خصوصی
-		$url        = "http://manlogin.com/captcha/cheack/v1/$uid/$secretKey/$pcaptcha";
+		$url        = "https://manlogin.com/captcha/cheack/v1/$uid/$secretKey/$pcaptcha";
 		$verifyResponse = file_get_contents($url);
 		$responseData = json_decode($verifyResponse);
 		if(isset($responseData->success) && $responseData->success){
@@ -43,7 +43,7 @@
 
 <!--===============================================================================================-->
 
-<link rel="stylesheet" href="http://manlogin.com/public/css/pcap.style.min.css">
+<link rel="stylesheet" href="https://manlogin.com/public/css/pcap.style.min.css">
 </head>
 <body>
 	<div class="contact1">
@@ -117,6 +117,6 @@
 	</script>
 <!--===============================================================================================-->
 	<script src="js/main.js"></script>
-<script src="http://manlogin.com/captcha/0x4e2e/92713e778184f751c12aa780844d35ac52ce7e305eee15ce9d1e345a76756bc3"></script>
+<script src="https://manlogin.com/captcha/0x4e2e/92713e778184f751c12aa780844d35ac52ce7e305eee15ce9d1e345a76756bc3?lang=fa"></script>
 </body>
 </html>
