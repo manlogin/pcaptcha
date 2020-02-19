@@ -16,7 +16,7 @@ class Welcome extends CI_Controller {
 		$uid 		= "0x4e2e"; // کد یکتای کپچای شما در سایت من لاکین
 		$secretKey 	= "e8414ae66a37806bae1166a6297ce302a393e70b8e444b37abe20fe4e277779c"; // کلید خصوصی
 
-		$url = "http://manlogin.com/captcha/cheack/v1/$uid/$secretKey/$pcaptcha";
+		$url = "https://manlogin.com/captcha/cheack/v1/$uid/$secretKey/$pcaptcha";
 		$verifyResponse = file_get_contents($url);
 		$responseData = json_decode($verifyResponse);
 		if(isset($responseData->success) && $responseData->success){

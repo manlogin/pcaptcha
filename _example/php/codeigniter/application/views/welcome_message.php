@@ -104,7 +104,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		}
 
 	</style>
-	<link rel="stylesheet" href="http://manlogin.com/public/css/pcap.style.min.css">
+	<link rel="stylesheet" href="https://manlogin.com/public/css/pcap.style.min.css">
 </head>
 
 <body>
@@ -173,7 +173,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		}
 
 	</script>
-	<script src="http://manlogin.com/captcha/0x4e2e/92713e778184f751c12aa780844d35ac52ce7e305eee15ce9d1e345a76756bc3">
+	<script src="https://manlogin.com/captcha/0x4e2e/92713e778184f751c12aa780844d35ac52ce7e305eee15ce9d1e345a76756bc3?lang=fa">
 	</script>
 
 </body>
