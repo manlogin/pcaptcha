@@ -13,7 +13,7 @@
 				<span class="contact1-form-title">
 					Get in touch
 				</span>
-                @if(ViewData["result"] == "OK"){
+                @if((bool)ViewData["result"] == true){
                     <div class="alert alert-success">@ViewData["message"]</div>
                 }else{
                     <div class="alert alert-danger">@ViewData["message"]</div>

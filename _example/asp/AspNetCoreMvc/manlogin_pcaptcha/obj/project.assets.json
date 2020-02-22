@@ -5285,11 +5285,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\09156535299\\dotnet\\manlogin_pcaptcha\\manlogin_pcaptcha.csproj",
+      "projectUniqueName": "C:\\xampp\\htdocs\\pcaptcha\\_example\\asp\\AspNetCoreMvc\\manlogin_pcaptcha\\manlogin_pcaptcha.csproj",
       "projectName": "manlogin_pcaptcha",
-      "projectPath": "C:\\Users\\09156535299\\dotnet\\manlogin_pcaptcha\\manlogin_pcaptcha.csproj",
+      "projectPath": "C:\\xampp\\htdocs\\pcaptcha\\_example\\asp\\AspNetCoreMvc\\manlogin_pcaptcha\\manlogin_pcaptcha.csproj",
       "packagesPath": "C:\\Users\\09156535299\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\09156535299\\dotnet\\manlogin_pcaptcha\\obj\\",
+      "outputPath": "C:\\xampp\\htdocs\\pcaptcha\\_example\\asp\\AspNetCoreMvc\\manlogin_pcaptcha\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\09156535299\\AppData\\Roaming\\NuGet\\NuGet.Config"

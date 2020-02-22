@@ -28,7 +28,7 @@ namespace manlogin_pcaptcha.Controllers
         public IActionResult Form(FormModel model)
         {
             ViewData["message"] = "";
-            ViewData["result"] = "False";
+            ViewData["result"] = false;
             if (model.pcaptcha !="")
             {
                 var uid 		= "0x4e2e"; // کد یکتای کپچای شما در سایت من لاکین
@@ -44,7 +44,7 @@ namespace manlogin_pcaptcha.Controllers
                 {
                     // Do more by Data Posted
                     ViewData["message"] = "با موفقیت کپچای شما تایید شد";
-                    ViewData["result"] = "OK";
+                    ViewData["result"] = true;
                 }else{
                     ViewData["message"] = "کپچای من ربات نیستم رو به درستی کامل کنید";
                 }
