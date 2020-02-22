@@ -1,0 +1,67 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\09156535299\\dotnet\\manlogin_pcaptcha\\manlogin_pcaptcha.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\09156535299\\dotnet\\manlogin_pcaptcha\\manlogin_pcaptcha.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\09156535299\\dotnet\\manlogin_pcaptcha\\manlogin_pcaptcha.csproj",
+        "projectName": "manlogin_pcaptcha",
+        "projectPath": "C:\\Users\\09156535299\\dotnet\\manlogin_pcaptcha\\manlogin_pcaptcha.csproj",
+        "packagesPath": "C:\\Users\\09156535299\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\09156535299\\dotnet\\manlogin_pcaptcha\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\09156535299\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "dependencies": {
+            "Microsoft.AspNet.WebApi.Client": {
+              "target": "Package",
+              "version": "[5.2.7, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.102\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
