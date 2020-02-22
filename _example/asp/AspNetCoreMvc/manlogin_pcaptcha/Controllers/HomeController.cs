@@ -35,7 +35,6 @@ namespace manlogin_pcaptcha.Controllers
                 var secretKey 	= "e8414ae66a37806bae1166a6297ce302a393e70b8e444b37abe20fe4e277779c"; // کلید خصوصی
                 var url        = "https://manlogin.com/captcha/cheack/v1/"+uid+"/"+secretKey+"/"+model.pcaptcha;
 
-                var req = new HttpRequestMessage(HttpMethod.Get,url);
                 var client = new HttpClient();
                 var res = client.GetAsync(url);
                 dynamic response = res.Result.Content.ReadAsStringAsync().Result;
@@ -62,7 +61,7 @@ namespace manlogin_pcaptcha.Controllers
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {
-            return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
+            return View(new ErrorViewModel { uestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
         }
     }
 }
