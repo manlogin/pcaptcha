@@ -1,0 +1,25 @@
+{
+  "name": "recaptcha",
+  "version": "1.0.0",
+  "description": "ManLogin",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://gitlab.com/sirsharkjs/manlogin-recaptcha-nodejs.git"
+  },
+  "author": "SirSharkJS",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://gitlab.com/sirsharkjs/manlogin-recaptcha-nodejs/issues"
+  },
+  "homepage": "https://gitlab.com/sirsharkjs/manlogin-recaptcha-nodejs#readme",
+  "dependencies": {
+    "axios": "^0.19.2",
+    "ejs": "^3.0.1",
+    "express": "^4.17.1",
+    "https": "^1.0.0"
+  }
+}
